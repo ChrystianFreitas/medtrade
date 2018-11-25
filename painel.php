@@ -25,17 +25,13 @@
     <title>Menu Principal</title>
    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/painel.css">
-    
-   
 
 </head>
-
-
 
 <body>
 
 <header>
-    <!--img src="./imagens/amtt.png"-->
+    <img src="./imagens/login_celular.png">
 
     <input type="checkbox" id="chk">
 
