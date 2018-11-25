@@ -25,7 +25,7 @@
         <div class="hero-body">
             <div class="container has-text-centered">
                 <div class="column is-4 is-offset-4">
-                    <!--img src="./imagens/amtt.png"-->
+                    <img src="./imagens/login_celular.png">
                     <!--h3 class="title has-text-grey">AMTT</h3-->
                     <?php
                         if(isset($_SESSION['nao_autenticado'])):
@@ -41,13 +41,13 @@
                         <form action="login.php" method="POST">
                             <div class="field">
                                 <div class="control">
-                                    <input name="usuario" name="text" class="input is-large" placeholder="Seu usuário" autofocus="">
+                                    <input name="usuario" name="text" class="input is-large" placeholder="Usuário" autofocus="">
                                 </div>
                             </div>
 
                             <div class="field">
                                 <div class="control">
-                                    <input name="senha" class="input is-large" type="password" placeholder="Sua senha">
+                                    <input name="senha" class="input is-large" type="password" placeholder="Senha">
                                 </div>
                             </div>
                             <button type="submit" class="button is-block is-link is-large is-fullwidth">Entrar</button>
