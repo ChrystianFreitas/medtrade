@@ -1,0 +1,85 @@
+html,body {
+    height: 100%;
+    width: 100%;
+
+    font-family: 'Open Sans', serif;
+    font-size: 14px;
+    font-weight: 300;
+    background-color:#191970;
+
+  }
+  .hero.is-success {
+
+    background-image:url("../imagens/tela_login.png");
+    background-size:700px 700px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #121274;
+  }
+
+  .box{
+    border: 0px transparent;
+    -webkit-box-shadow: none;
+    background: transparent;
+    margin: 0px;
+    padding:0px;
+  }
+
+
+.column.is-4.is-offset-4{
+  margin-top:100px;
+}
+
+
+  .hero .nav, .hero.is-success .nav {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border:0px;
+
+  }
+  input {
+    font-weight: 300;
+  }
+  p {
+    font-weight: 700;
+  }
+
+.button.is-block.is-link.is-large.is-fullwidth{
+  background-color:#191970;
+
+}
+
+@media screen and (max-width: 764px){
+  .hero.is-success{
+    background-image:url("../imagens/login_celular.png");
+    background-size:400px 700px;
+  }
+
+  .button.is-block.is-link.is-large.is-fullwidth{
+    border:1px solid white;
+
+  }
+
+  .column.is-4.is-offset-4{
+    margin-top:250px;
+  }
+
+}
+
+@media screen and (max-width: 500px){
+  .hero.is-success{
+    background-image:url("../imagens/login_celular.png");
+    background-size:350px 600px;
+  }
+
+  .button.is-block.is-link.is-large.is-fullwidth{
+    border:1px solid white;
+
+  }
+
+  .column.is-4.is-offset-4{
+    margin-top:250px;
+  }
+
+}
+

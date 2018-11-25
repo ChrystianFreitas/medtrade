@@ -1,0 +1,32 @@
+body{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    margin:auto;
+
+    
+}
+
+.estrutura{
+    width:500px;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    margin:auto;
+}
+.alert-heading{
+    font-size:20pt;
+    margin:20px;
+}
+
+.button.is-link{
+    text-align: right;
+    position: center;
+    font-size:12pt;
+}
+
+.alert.alert-success{
+
+}
