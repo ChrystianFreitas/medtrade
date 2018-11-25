@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+   
 }
 
 
@@ -10,29 +11,16 @@ header {
     height: 70px;
     top: 0;
     left: 0;
-    background-color: #191970;
+    background-color: #4AAAB0;
     position: fixed;
     text-align: left;
     color: #FFFFFF;
     font-family: Bahnschrift;
     z-index:1;
+
+    
 }
 
-h2#servNome{
-    font-size: 20pt;
-    font-weight: bolder;
-    color:white;
-    display:inline;
-    margin-top:10px;
-
-}
-.divNomeMat{
-    z-index:5;
-    position: relative;
-    text-align:right;
-    margin-right:15px;
-    margin-top:30px;
-}
 
 .menu-icon{
     position: fixed;
@@ -53,6 +41,109 @@ h2#servNome{
 
 }
 
+#search {
+
+}
+
+.estrutura-searchbar{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+#search input[type="text"] {
+    background: url(search-white.png) no-repeat 10px 6px #fcfcfc;
+    border: 1px solid #d1d1d1;
+    font: bold 13px Arial,Helvetica,Sans-serif;
+    color: #bebebe;
+    width: 90%;
+    padding: 6px 15px 6px 35px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+    -webkit-transition: all 0.7s ease 0s;
+    -moz-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+    position:center;
+    
+    }
+  
+
+
+
+.estrutura_header{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    width:100%;
+    
+}
+
+.boas-vindas{
+    padding:20px;
+    margin-left:20px;
+}
+
+.logo-imagem{
+    z-index: 8;
+   width: 150px;
+    
+}
+
+#id_img_logo{
+ 
+    margin-top:10px;
+    width: 140px;
+}
+
+.segundo-header{
+    margin-top:70px;
+    margin-bot:0px;
+    width:100%;
+    height: 160px;
+    background-color:#52B0B6;
+    
+}
+@font-face {
+    font-family: HUM777K;
+    src: local(HUM777K), url(../fontes/HUM777K.ttf);
+}
+
+h2#servNome{
+    
+    font-size: 20pt;
+    font-weight: bolder;
+    color:white;
+    display:inline;
+    margin-top:80px;
+    font-family: HUM777K;
+    
+  
+
+}
+@font-face {
+    font-family: shruti;
+    src: local(shruti), url(../fontes/shruti.ttf);
+}
+
+h1{
+    color:white;
+    font-weight: normal;
+    
+
+}
+
+
+
+
+
 .menu-icon:hover{
     color: #5B859A;
 }
@@ -67,7 +158,7 @@ h2#servNome{
 .menu{
     height: 100%;
     position: fixed;
-    background-color: #191970;
+    background-color: #4AAAB0;
     top: 0;
     overflow: hidden;
     transition: all .5s;
@@ -80,8 +171,34 @@ h2#servNome{
 
 }
 
+.rodape{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 45px;
+    margin-top:5px;
+    background-color:#4AAAB0;
+    padding:10px;
+    bottom:0px;
+
+
+}
+
+.labelRodape{
+    color:white;
+    margin-right: 50px;
+    margin-left: 25px;
+
+}
+.labelRodape2{
+    color:white;
+    margin-left: 60px;
+}
+
 ul{
     list-style: none;
+    
+
 }
 
 ul li a{
@@ -90,7 +207,7 @@ ul li a{
     font-family: Bahnschrift;
     padding: 10px;
     border-bottom: 1px solid #CCCCCC;
-    color: #CCCCCC;
+    color: white;
     text-decoration: none;
     transition: all .5s;
     z-index: 10 ;
@@ -131,27 +248,11 @@ ul li a:hover{
     display: block;
 }
 
-
-
-#chk:checked ~#Amostragem,
-#chk:checked ~#Funcionamento,
-#chk:checked ~#Limpeza, #chk:checked ~#Gerenciamento, #chk:checked ~#Afericao_combustivel {
-   left: -300px;
+h6{
+    text-align: center;
 }
 
-#Amostragem,
-#Funcionamento,
-#Limpeza, #Gerenciamento, #Afericao_combustivel {
-    width: 300px;
-    left: -600px;
-}
 
-#Amostragem:target,
-#Funcionamento:target,
-#Limpeza:target,#Gerenciamento:target, #Afericao_combustivel:target {
-    transform: translateX(300px);
-    box-shadow: 2px 2px 5px 2px rgba(0,0,0,.5);
-}
 
 .logo {
     width: 100%;
@@ -177,6 +278,12 @@ ul li a:hover{
         padding:4px;
     }
 
+    #id_img_logo{
+ 
+        margin-top:4px;
+        width: 125px;
+    }
+
     header{
         height: 45px;
     }
@@ -187,14 +294,14 @@ ul li a:hover{
     }
 
 
-
+    .segundo-header{
+        margin-top:45px;
+    }
     .voltar{
         margin-top:45px;
     }
 
-    h2#servNome{
-        font-size:11pt;
-    }
+  
 
     .title, .divNomeMat{
         margin: 5px 5px;
@@ -211,28 +318,22 @@ ul li a:hover{
     }
 
 
-    #chk:checked ~#Amostragem,
-    #chk:checked ~#Funcionamento,
-    #chk:checked ~#Limpeza, #chk:checked ~#Gerenciamento,#chk:checked ~#Afericao_combustivel  {
-        left: -250px;
-    }
-
-    #Amostragem,
-    #Funcionamento,
-    #Limpeza, #Gerenciamento, #Afericao_combustivel {
-        width: 250px;
-        left: -500px;
-    }
-
-    #Amostragem:target,
-    #Funcionamento:target,
-    #Limpeza:target,#Gerenciamento:target, #Afericao_combustivel:target {
-        transform: translateX(250px);
-        box-shadow: 2px 2px 5px 2px rgba(0,0,0,.5);
-    }
 
     ul li a{
         font-size: 15px;
+    }
+
+    .labelRodape{
+        color:white;
+        font-size:10pt;
+        margin-right: 25px;
+        margin-left: 15px;
+    
+    }
+    .labelRodape2{
+        font-size:10pt;
+        color:white;
+        margin-left: 20px;
     }
 }
 

@@ -31,107 +31,122 @@
 <body>
 
 <header>
-    <img src="./imagens/login_celular.png">
-
-    <input type="checkbox" id="chk">
-
-    <label for="chk" class="menu-icon">&#9776</label>
-    <div class="bg"></div>
-
-    <div class="divNomeMat">
-        <div>
-            <h1 class="title">
-                <h2 id="servNome"><?php echo $_SESSION['nomeServidor'] ?></h2>
-            </h1>
-
+   
+<input type="checkbox" id="chk">
+        <label for="chk" class="menu-icon">&#9776</label>
+        <div class="estrutura_header">
+        
+        
+        <div class="imagem-logo">
+            <img src="./imagens/login_celular.png" id="id_img_logo">
         </div>
+        <label for="chk" class="menu-icon">&#9776</label>
+        <div class="bg"></div>
+
+        
     </div>
     <nav class="menu" id="principal">
         <ul>
 
 
-            <li><a class="voltar" href="painel.php">Menu Principal</a></li>
+            <li><a class="voltar" href="painel.php">MENU PRINCIPAL</a></li>
 
-            <li><a href="#Amostragem">Conferência por Amostragem<span>+</span></a></li>
+            <li><a href="./telasMenu/lista_medicamentos.php">ANTIONEOPLÁSTICO</a></li>
+            <li><a href="#">IMUNOSSUPRESSORES</a></li>
+            <li><a href="#">IMUNOGLOBINAS</a></li>
+            <li><a href="#">ANTI-INFLAMATÓRIOS</a></li>
+            <li><a href="#">PRODUTOS COM DESCONTO</a></li>
+            <li><a href="#">FARMACOS</a></li>
+            <li><a href="logout.php">SAIR</a></li>
 
-            <li><a href="#Funcionamento">Indicador de Acessibilidade<span>+</span></a></li>
-
-            <li><a href="#Limpeza">Indicador de Limpeza<span>+</span></a></li>
-
-            <li><a href="#Afericao_combustivel">Aferição combustível<span>+</span></a></li>
-
-            <?php
-            if(isset($_SESSION['adm'])):
-                ?>
-                <li><a href="#Gerenciamento">Gerenciamento de usuários<span>+</span></a></li>
-            <?php
-            endif;
-            ?>
-
-            <li><a href="logout.php">Sair</a></li>
-
+           
 
         </ul>
     </nav>
-
-
-    <nav class="menu" id="Amostragem">
-        <ul>
-            <li><a href="#" class="voltar">Voltar</a></li>
-            <li><a href="#">Registrar</a></li>
-            <li><a href="#">Registros</a></li>
-        </ul>
-    </nav>
-
-    <nav class="menu" id="Funcionamento">
-        <ul>
-            <li><a href="#" class="voltar">Voltar</a></li>
-            <li><a href="#">Registrar</a></li>
-            <li><a href="#">Registros</a></li>
-        </ul>
-    </nav>
-
-    <nav class="menu" id="Limpeza">
-        <ul>
-            <li><a href="#" class="voltar">Voltar</a></li>
-            <li><a href="./formularios/form_limpeza.php">Registrar</a></li>
-            <li><a href="#">Registros</a></li>
-        </ul>
-    </nav>
-
-    <nav class="menu" id="Afericao_combustivel">
-        <ul>
-            <li><a href="#" class="voltar">Voltar</a></li>
-            <li><a href="./afericao/afericao_combustivel.php">Registrar</a></li>
-            <li><a href="./afericao/registros.php">Registros</a></li>
-        </ul>
-    </nav>
-
-    <nav class="menu" id="Gerenciamento">
-        <ul>
-            <li><a href="#" class="voltar">Voltar</a></li>
-            <li><a href="./gerenciamento_usuario/cadastrar_usuario.php">Cadastrar usuário</a></li>
-            <li><a href="./gerenciamento_usuario/atualizar_usuario.php">Atualizar usuários</a></li>
-        </ul>
-    </nav>
-
 
 
 
 
 </header>
 
+    <div class="segundo-header">
+        <div class="boas-vindas">
+            <div><h1>Olá</h1></div>
+            <div><h1 class="title">
+                        <h2 id="servNome"><?php echo strtoupper($_SESSION['nomeServidor']).'!'?></h2>
+                    </h1>
+            </div>
+        </div>
+        <div class="estrutura-searchbar">
+            <form method="get" action="/search" id="search">
+               </span> <input name="q" type="text" size="40" placeholder="Procurando um medicamento?" />
+            </form>
+        </div>
+    </div>
+    <div>
 
 
-<!--img src="./imagens/onibus.jpg" class="imagem"-->
 
-
-
-
-
-
-
-
-
+    <table style="padding-top: 5% !important;">
+        <tbody>
+            <tr>
+                <td>
+                    <img style="width: 105%;" src="./imagens/01.png">
+                </td>
+                <td>
+                    <img style="width: 105%;" src="./imagens/02.png">
+                </td>
+                <td>
+                    <img style="width: 105%;" src="./imagens/03.png">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h6 style="font-family:Palatino Linotype">ANTIONEOPLÁSTICO</h6>
+                </td>
+                <td>
+                    <h6 style="font-family:Palatino Linotype">IMUNOSSUPRESSORES</h6>
+                </td>
+                <td>
+                    <h6 style="font-family:Palatino Linotype">IMUNOGLOBINAS</h6>
+                </td>
+            </tr>
+        <tbody>
+    </table>
+    <hr style="margin-right: 30%; margin-top: 9%;">
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <img style="width: 105%;" src="./imagens/04.png">
+                </td>
+                <td>
+                    <img style="width: 105%;" src="./imagens/05.png">
+                </td>
+                <td>
+                    <img style="width: 105%;" src="./imagens/06.png">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h6 style="font-family:Palatino Linotype">ANTI-INFLAMATÓRIOS</h6>
+                </td>
+                <td>
+                    <h6 style="font-family:Palatino Linotype">PRODUTOS COM</h6>
+                    <h6 style="font-family:Palatino Linotype">DESCONTO</h6>
+                </td>
+                <td>
+                    <h6>FARMACOS</h6>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+ </div>
+        <div class="rodape">
+            <div><label class="labelRodape">CNPJ:12.345.678/0009-42</label></div>
+            <div><label class="labelRodape2">Contato: medtrade@yahoo.com</label></div>
+        </div>
 </body>
+
+
 </html>

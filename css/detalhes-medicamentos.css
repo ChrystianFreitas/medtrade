@@ -1,0 +1,57 @@
+
+.imagemMedicamento{
+    
+   position:center;
+   text-align: center;
+
+}
+.estrutura-detalhes{
+    margin-top:80px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+#image{
+    width:140px;
+}
+
+.descricaoMed{
+    margin-bottom: 20px;
+}
+.conteudoMed{
+    width: 285px;
+    height:220px;
+    padding:20px;
+    border: 1px solid rgba(0,0,0,0.4);
+    border-radius: 20px;
+    
+}
+
+#titulo{
+    font-size:17pt;
+    margin-top:10px;
+}
+
+.button.is-success{
+    background-color: green;
+    margin-left:39px;
+
+}
+#reais{
+    margin-top:10px;
+    color:green;
+}
+.divReais{
+    margin-right:69px;
+}
+
+.fimMed{
+    margin-top:10px;
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    
+}
+

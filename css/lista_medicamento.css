@@ -1,0 +1,26 @@
+#img-seta{
+    size: 10px 10px;
+}
+
+#detalhesLink{
+   font-size:12pt;
+}
+
+.botaodetalhes{
+    -webkit-text-stroke-width: 20px;
+    margin:90px;
+}
+
+ul {
+    background-color: #F8F8F8;
+    list-style-image: url(arrow.png);
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 13px;
+    width: 410px;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+}
+li {
+    margin: 10px;
+    margin-left: 25px;
+}
