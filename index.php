@@ -13,7 +13,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>AMTT</title>
+    <title>MedTrade</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/bulma.min.css"/>
     <link rel="stylesheet" type="text/css" media="screen" href="./css/index.css" />
@@ -26,7 +26,6 @@
             <div class="container has-text-centered">
                 <div class="column is-4 is-offset-4">
                     <img src="./imagens/login_celular.png">
-                    <!--h3 class="title has-text-grey">AMTT</h3-->
                     <?php
                         if(isset($_SESSION['nao_autenticado'])):
                     ?>
